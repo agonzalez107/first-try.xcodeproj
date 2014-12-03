@@ -17,6 +17,7 @@
 		4938D1721A2F6475002A83DE /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938D1711A2F6475002A83DE /* Wine.swift */; };
 		692CCC571A2F9754003AC7BC /* Alcohol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692CCC561A2F9754003AC7BC /* Alcohol.swift */; };
 		692CCC5A1A2F9855003AC7BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692CCC581A2F9855003AC7BC /* Main.storyboard */; };
+		69EBFB071A2FBBDF0012081B /* test add.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EBFB061A2FBBDF0012081B /* test add.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		4938D1711A2F6475002A83DE /* Wine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wine.swift; sourceTree = "<group>"; };
 		692CCC561A2F9754003AC7BC /* Alcohol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alcohol.swift; sourceTree = "<group>"; };
 		692CCC591A2F9855003AC7BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69EBFB051A2FBBDF0012081B /* test add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "test add.h"; sourceTree = "<group>"; };
+		69EBFB061A2FBBDF0012081B /* test add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "test add.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 		4906FDA61A2AD80E009E5BE8 /* DrinkCounter */ = {
 			isa = PBXGroup;
 			children = (
+				69EBFB051A2FBBDF0012081B /* test add.h */,
+				69EBFB061A2FBBDF0012081B /* test add.m */,
 				4906FDA91A2AD80E009E5BE8 /* AppDelegate.swift */,
 				4906FDAB1A2AD80E009E5BE8 /* ViewController.swift */,
 				4906FDCB1A2B8802009E5BE8 /* Register.swift */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69EBFB071A2FBBDF0012081B /* test add.m in Sources */,
 				4906FDAC1A2AD80E009E5BE8 /* ViewController.swift in Sources */,
 				4906FDAA1A2AD80E009E5BE8 /* AppDelegate.swift in Sources */,
 				4938D1721A2F6475002A83DE /* Wine.swift in Sources */,
@@ -352,9 +358,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DrinkCounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -362,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DrinkCounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
